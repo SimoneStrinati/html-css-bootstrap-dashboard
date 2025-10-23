@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!--Inizio Navbar-->
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
@@ -45,10 +49,94 @@
             </div>
         </nav>
     </header>
+    <!--Fine Navbar-->
 
+    <!--Inizio contenuto principale-->
     <main>
 
-        
+        <div class="container py-4">
+            <div class="rows">
+                <div class="col">
+
+                    <div class="d-flex justify-content-between">
+                        <h2>Catalogo Libri</h2>
+                        <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                    </div>
+
+
+
+                    <!--Tabella-->
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>Titolo</th>
+                                    <th class="d-none d-md-table-cell">Data Prestito</th>
+                                    <th>Stato</th>
+                                    <th class="text-center">Azioni</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>I pilastri della terra</td>
+                                    <td class="d-none d-md-table-cell">-</td>
+                                    <td>
+                                        <span class="badge text-bg-success">Disponibile</span>
+                                    </td>
+                                    <td class="d-flex justify-content-center">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm me-1">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary btn-sm me-1">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>I promessi sposi</td>
+                                    <td class="d-none d-md-table-cell">-</td>
+                                    <td>
+                                        <span class="badge text-bg-success">Disponibile</span>
+                                    </td>
+                                    <td class="d-flex justify-content-center">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm me-1">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary btn-sm me-1">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Il signore degli anelli</td>
+                                    <td class="d-none d-md-table-cell">18/10/2023</td>
+                                    <td>
+                                        <span class="badge text-bg-warning">In prestito</span>
+                                    </td>
+                                    <td class="d-flex justify-content-center">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm me-1">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary btn-sm me-1">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="col-lg-3">
+
+                    </div>
+                </div>
+
+            </div>
 
     </main>
 
